@@ -1,0 +1,34 @@
+GET http://localhost:5005/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJVc2UiLCJlbWFpbCI6InVzZUBnbWFpbC5jb20iLCJpYXQiOjE2Nzg4NzI2ODcsImV4cCI6MTY3ODg3MjcwMn0.RogPYdKRMUz6DeiZDwWtA9xcPEEYLHIsMmdrD9xMmgA
+
+###
+GET http://localhost:5005/users/use@gmail.com
+
+###
+POST http://localhost:5005/login
+Content-Type: application/json
+
+{
+    "email": "use@gmail.com",
+    "password": "87654321"
+}
+
+###
+GET http://localhost:5005/token
+
+###
+DELETE  http://localhost:5005/logout
+
+
+
+###
+POST  http://localhost:5005/users
+Content-Type: application/json
+
+{
+    "name": "Use",
+    "email": "use@gmail.com",
+    "password": "87654321",
+    "confPassword": "87654321"
+}
+
